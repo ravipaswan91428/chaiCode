@@ -73,13 +73,8 @@ payments_records{
   amount decimal(10,2) not null
 }
 
-// vehicles.id < parking_session.id
-// parking_spot.id < vehicles.id
-// parking_spot.id < parking_session.id
-// payments_records.id - parking_zone.id
 
 vehicle_category.id < vehicles.vehicle_type
-
 parking_zone.id < parking_spot.zone_id
 parking_spot_category.id < parking_spot.parking_spot_category
 vehicles.id < parking_ticket.vehicle_id
